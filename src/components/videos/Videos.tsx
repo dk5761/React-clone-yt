@@ -6,12 +6,13 @@ import ChannelCard from '../channelcard/ChannelCard'
 
 
 interface VideoProps {
-    videos?: Item[]
+    videos?: Item[],
+    direction: "row" | "row-reverse" | "column" | "column-reverse"
 }
 
-const Videos: React.FC<VideoProps> = ({ videos }: VideoProps) => {
+const Videos: React.FC<VideoProps> = ({ videos, direction }: VideoProps) => {
     return (
-        <Stack direction={"row"} flexWrap={"wrap"} justifyContent={"start"} gap={2}>
+        <Stack direction={direction || "row"} flexWrap={"wrap"} justifyContent={"start"} gap={2}>
             {
                 videos?.map((item, idx) => (
                     <Box key={idx}>

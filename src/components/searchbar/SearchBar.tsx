@@ -31,7 +31,7 @@ const SearchBar = () => {
                 }
             }}
         >
-            <input className='search-bar' placeholder='Search...' value={""} onChange={(e) => setSearchTerm(e.target.value)} style={{ outline: "none", border: 'none' }} />
+            <input className='search-bar' placeholder='Search...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} style={{ outline: "none", border: 'none' }} />
             <IconButton type='submit' sx={{ p: '10px', color: 'red' }}>
                 <Search />
             </IconButton>

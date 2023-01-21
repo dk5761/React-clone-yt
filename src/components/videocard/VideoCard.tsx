@@ -11,14 +11,6 @@ interface VideoCardProps {
 }
 
 const VideoCard: React.FC<VideoCardProps> = ({ video: { id: { videoId }, snippet } }) => {
-
-    // const navigate = useNavigate();
-
-    // const handleOnCardClick = () => {
-    //     const url = videoId ? `/video/${videoId}` : demoVideoUrl;
-    //     return navigate(url)
-    // }
-
     return (
         <Card sx={{
             width: {
