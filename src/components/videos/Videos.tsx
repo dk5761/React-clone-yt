@@ -7,7 +7,7 @@ import ChannelCard from '../channelcard/ChannelCard'
 
 interface VideoProps {
     videos?: Item[],
-    direction: "row" | "row-reverse" | "column" | "column-reverse"
+    direction?: "row" | "row-reverse" | "column" | "column-reverse"
 }
 
 const Videos: React.FC<VideoProps> = ({ videos, direction }: VideoProps) => {
